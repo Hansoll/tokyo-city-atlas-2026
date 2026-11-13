@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="도쿄 지하철로 갈 수 있는 동네와 즐길 거리. 사진으로 둘러보고, 지도에서 위치를 찾고, 마음에 드는 동네를 저장하세요.">
+  <title>도쿄 취향 지도 — 동네마다 다른 즐거움</title>
+  <link rel="preload" href="assets/tokyo-sans.woff?v=app-10" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="assets/leaflet/leaflet.css">
+  <link rel="stylesheet" href="styles.css?v=app-10">
+  <script src="assets/leaflet/leaflet.js" defer></script>
+  <script src="assets/leaflet/Leaflet.VectorGrid.bundled.js" defer></script>
+  <script src="assets/leaflet/tokyo-basemap.js?v=app-10" defer></script>
+  <script src="assets/region-label-layout.js?v=app-10" defer></script>
+  <script src="app.js?v=app-10" defer></script>
+</head>
+<body data-view="map" data-sheet="peek">
+  <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="i-compass" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="m16.2 7.8-2.8 5.6-5.6 2.8 2.8-5.6 5.6-2.8Z"></path></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2V5Z"></path><path d="M9 3v16M15 5v16"></path></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"></path></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="7.3"></circle><path d="m16 16 5 5"></path></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7h.01"></path></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"></path></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-6-6 6 6-6 6"></path></symbol>
+    <symbol id="i-food" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3v5a3 3 0 0 0 6 0V3M7 3v18M20 3c-3 1-5 4-5 8h5M20 3v18"></path></symbol>
+    <symbol id="i-shop" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m4 8 1.5-5h13L20 8M4 8v13h16V8M3 8h18M9 21v-7h6v7"></path><path d="M4 8a2.7 2.7 0 0 0 5.3 0 2.7 2.7 0 0 0 5.4 0A2.7 2.7 0 0 0 20 8"></path></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2L12 3ZM20 2v4M18 4h4M3 18v4M1 20h4"></path></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4C13 2 5 4 4 11c-1 6 5 10 10 7 5-3 6-9 6-14ZM4 21l11-11"></path></symbol>
+    <symbol id="i-train" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="15" rx="3"></rect><path d="M5 10h14M9 3v7M15 3v7M7 22l3-4M17 22l-3-4M8 14h.01M16 14h.01"></path></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></symbol>
+    <symbol id="i-plane" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 7 1 5-7c2-2 4-1 3 1l-4 7 5 5-2 2-6-4-5 3-2-1 3-5-4-2Z"></path></symbol>
+    <symbol id="i-landmark" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 9-5 9 5M3 9h18M4 21h16M6 10v8M12 10v8M18 10v8M3 18h18"></path></symbol>
+  </svg>
+
+  <a class="skip-link" href="#region-sheet">동네 목록으로 바로가기</a>
+  <main id="app-main" class="map-app">
+    <h1 id="map-title" class="visually-hidden">도쿄 취향 지도</h1>
+    <section id="map-screen" class="map-screen" aria-labelledby="map-title">
+      <div class="map-card">
+        <div id="map" class="map" aria-label="일본 전역을 이동하고 도쿄의 동네·관광지·지하철역을 찾는 지도">
+          <div id="map-basemap" class="map-basemap" aria-label="도로와 강, 공원, 건물이 표시되는 지도"></div>
+          <div id="map-poi-labels" class="map-poi-labels" aria-label="주요 관광지와 지하철역 위치"></div>
+          <div id="map-labels" class="map-labels" role="group" aria-label="지도에서 여행 구역과 장소 선택"></div>
+          <div class="map-loading" id="map-loading" role="status">도쿄 지도를 불러오는 중입니다.</div>
+        </div>
+        <div id="map-view-switcher" class="map-view-switcher" role="group" aria-label="지도 이동">
+          <button id="tokyo-view" type="button" aria-pressed="true">도쿄</button>
+          <button id="japan-view" type="button" aria-pressed="false">일본 전체</button>
+          <button id="narita-view" type="button" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-plane"></use></svg>나리타</button>
+        </div>
+        <span class="map-north" aria-label="북쪽이 위">N ↑</span>
+        <div class="map-controls" aria-label="지도 보기 조절">
+          <button id="zoom-in" type="button" aria-label="지도 확대">＋</button>
+          <button id="zoom-out" type="button" aria-label="지도 축소">−</button>
+          <button id="reset-map" type="button" aria-label="도쿄 기본 위치로 돌아가기"><svg class="icon" aria-hidden="true"><use href="#i-map"></use></svg><span>도쿄</span></button>
+        </div>
+        <div id="map-status" class="map-status" role="status" hidden><span id="map-status-text"></span><button id="retry-map-tiles" type="button">다시 시도</button></div>
+        <div class="map-footer"><span id="map-help">영역을 누르면 개별 장소가 보여요</span><span class="map-attribution"><a href="https://openfreemap.org/" target="_blank" rel="noopener noreferrer">OpenFreeMap</a> · <a href="https://www.openmaptiles.org/" target="_blank" rel="noopener noreferrer">© OpenMapTiles</a> · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap</a></span></div>
+      </div>
+    </section>
+
+    <header id="map-toolbar" class="map-toolbar">
+      <span class="desktop-brand"><svg class="icon" aria-hidden="true"><use href="#i-compass"></use></svg><span>도쿄 취향 지도<small>TOKYO, YOUR WAY</small></span></span>
+      <div class="search-field" role="search">
+        <svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg>
+        <label class="visually-hidden" for="area-search">동네와 즐길 거리 검색</label>
+        <input id="area-search" type="search" placeholder="동네, 메이드 카페, 온천 검색" enterkeyhint="search" autocomplete="off" autocapitalize="off" spellcheck="false" aria-controls="area-list" aria-describedby="search-summary">
+        <button id="clear-search" class="icon-button" type="button" aria-label="검색어 지우기" hidden><svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg></button>
+      </div>
+      <button id="open-saved" class="icon-button toolbar-saved" type="button" aria-label="저장한 동네 보기"><svg class="icon" aria-hidden="true"><use href="#i-heart"></use></svg><span id="toolbar-saved-count" class="saved-badge" hidden>0</span></button>
+      <button id="about-button" class="icon-button" type="button" aria-label="이 지도에 대해"><svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg></button>
+    </header>
+
+    <section id="region-sheet" class="region-sheet" data-snap="peek" data-content-mode="directory" aria-labelledby="sheet-title">
+      <div id="sheet-drag-zone" class="sheet-drag-zone">
+        <button id="sheet-handle" class="sheet-handle" type="button" aria-label="동네 목록을 전체 화면으로 펼치기" aria-expanded="false" aria-controls="sheet-full-content"><span class="grabber" aria-hidden="true"></span></button>
+        <div class="sheet-heading">
+          <div class="sheet-heading-copy"><h2 id="sheet-title">동네 둘러보기 <span id="sheet-count" class="count">20</span></h2><p id="sheet-caption">영역을 누르거나 목록을 끌어 올려보세요</p></div>
+          <div class="sheet-heading-actions">
+            <button id="sheet-minimize" class="icon-button" type="button" aria-label="목록을 작게 접고 지도 넓게 보기"><svg class="icon arrow-down" aria-hidden="true"><use href="#i-arrow"></use></svg></button>
+            <button id="sheet-expand" class="sheet-expand" type="button" aria-expanded="false" aria-controls="sheet-full-content"><span id="sheet-expand-label">목록 펼치기</span><svg class="icon arrow-up" aria-hidden="true"><use href="#i-arrow"></use></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <div id="sheet-preview" class="sheet-preview">
+        <div id="peek-discover">
+          <div id="peek-area-list" class="peek-area-list" aria-label="동네 미리보기"></div>
+          <p class="peek-hint">동네를 골라 위치와 즐길 거리를 살펴보세요.</p>
+        </div>
+        <div id="map-selection" class="map-selection" aria-label="선택한 동네 정보" hidden>
+          <div class="map-selection-preview" aria-live="polite" aria-atomic="true">
+            <img id="map-selection-image" class="map-selection-image" alt="" width="80" height="80">
+            <div><span id="map-selection-eyebrow" class="section-overline">YOUR NEXT STOP</span><strong id="map-selection-title"></strong><p id="map-selection-summary"></p><span id="map-selection-access" class="selection-access"></span></div>
+            <button id="map-save-area" class="save-button" type="button" aria-label="선택한 동네 저장" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-heart"></use></svg></button>
+          </div>
+          <div class="map-selection-actions">
+            <button id="clear-map-selection" class="secondary-button" type="button">다른 동네</button>
+            <button id="map-open-region" class="primary-button" type="button" disabled><span id="map-open-label">즐길 거리 보기</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></button>
+          </div>
+          <section id="selected-region-details" class="selected-region-details" aria-labelledby="selected-activities-title" hidden>
+            <p id="selected-region-summary" class="selected-region-summary"></p>
+            <div id="selected-region-access" class="selected-region-access"></div>
+            <div class="selected-activities-heading"><h3 id="selected-activities-title">이 동네에서 즐길 거리</h3><span id="selected-activity-count" class="count"></span></div>
+            <div id="selected-activity-list" class="selected-activity-list"></div>
+          </section>
+          <section id="selected-place-details" class="selected-place-details" aria-label="선택한 즐길 거리 상세" hidden>
+            <div id="selected-place-siblings" class="place-siblings" hidden></div>
+            <figure class="place-gallery">
+              <div class="place-photo-stage" id="place-photo-stage" role="group" tabindex="0" aria-label="선택한 즐길 거리 사진. 좌우로 넘기거나 화살표 키로 사진을 바꿀 수 있습니다."><img id="place-photo-image" alt="" width="1200" height="900" draggable="false"><span id="place-photo-counter" class="photo-counter" aria-live="polite"></span><button type="button" class="photo-arrow previous" data-place-photo-step="-1" aria-label="이전 사진">‹</button><button type="button" class="photo-arrow next" data-place-photo-step="1" aria-label="다음 사진">›</button></div>
+              <div id="place-photo-thumbnails" class="photo-thumbnails" aria-label="사진 선택"></div>
+              <figcaption id="place-photo-caption" class="gallery-caption"></figcaption><p id="place-photo-source" class="gallery-source"></p>
+            </figure>
+            <p id="place-description" class="selected-region-summary"></p>
+            <ul id="place-highlights" class="activity-highlights"></ul>
+            <dl class="place-practical"><dt>머무는 시간</dt><dd id="place-duration"></dd><dt>가는 길</dt><dd id="place-access"></dd><dt>알아두기</dt><dd id="place-tip"></dd></dl>
+            <div id="place-links" class="activity-actions"></div>
+            <button id="place-parent-region" class="place-parent-region" type="button"></button>
+          </section>
+        </div>
+      </div>
+      <div id="place-activity-footer" class="carousel-footer place-activity-footer" hidden>
+        <button id="previous-place-activity" class="nav-button" type="button"><span aria-hidden="true">←</span>이전 즐길 거리</button>
+        <span class="carousel-progress"><span class="progress-kind">이 동네의 즐길 거리</span><span id="place-activity-page" aria-live="polite"></span></span>
+        <button id="next-place-activity" class="nav-button next" type="button">다음 즐길 거리<span aria-hidden="true">→</span></button>
+      </div>
+
+      <div id="sheet-full-content" class="sheet-full-content" hidden>
+        <div class="sheet-list-tools">
+          <div class="sheet-tabs" role="group" aria-label="목록 범위">
+            <button id="all-filter" type="button" aria-pressed="true"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>전체 동네 <span id="all-count">20</span></button>
+            <button id="saved-filter" type="button" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-heart"></use></svg>저장한 동네 <span id="saved-count">0</span></button>
+          </div>
+          <nav class="category-strip" aria-label="취향별 동네 찾기">
+            <button class="category-chip" type="button" data-category="all" aria-pressed="true">전체</button>
+            <button class="category-chip" type="button" data-category="food" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-food"></use></svg>먹고 마시기</button>
+            <button class="category-chip" type="button" data-category="shopping" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-shop"></use></svg>쇼핑·취향</button>
+            <button class="category-chip" type="button" data-category="culture" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"></use></svg>전시·체험</button>
+            <button class="category-chip" type="button" data-category="relax" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-leaf"></use></svg>산책·휴식</button>
+          </nav>
+        </div>
+        <div id="sheet-scroll" class="sheet-scroll" tabindex="0" aria-label="동네 목록 스크롤">
+          <div class="directory-heading"><div><h3 id="directory-title">가보고 싶은 동네 <span id="area-count" class="count">20</span></h3><p id="scope-count">지하철과 도보로 가볍게</p></div><label class="visually-hidden" for="map-area-select">지역 이름과 즐길 거리 개수로 선택</label><select id="map-area-select"><option value="">이름으로 찾기</option></select></div>
+          <p id="search-summary" class="search-summary" role="status" aria-live="polite" hidden></p>
+          <div id="area-list" class="area-list"></div>
+          <div id="empty-results" class="empty-state" hidden><span class="empty-icon"><svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg></span><h3 id="empty-title">일치하는 동네가 없어요</h3><p id="empty-message">다른 검색어를 입력하거나 취향 선택을 바꿔보세요.</p><button id="reset-filters" class="primary-button" type="button">전체 동네 보기</button></div>
+          <footer class="page-footer"><p id="storage-note">저장한 동네는 이 브라우저에 보관됩니다.</p><p>도쿄메트로·도에이 지하철과 도보로 즐기는 시내 여행</p><button id="sources-button" class="text-button" type="button">방문 안내 · 정보와 사진 출처 ↗</button></footer>
+        </div>
+      </div>
+    </section>
+    <div id="app-error" class="app-error empty-state" role="alert" hidden><h2>도쿄 지도를 불러오지 못했어요</h2><p>연결 상태를 확인하고 다시 시도해 주세요.</p><button id="retry-load" class="primary-button" type="button">다시 불러오기</button></div>
+    <div id="safe-area-bottom" aria-hidden="true"></div>
+  </main>
+
+  <dialog id="region-dialog" class="region-dialog" aria-labelledby="region-title">
+    <div class="dialog-topbar">
+      <div class="region-heading"><div><p id="region-kicker" class="eyebrow"></p><div class="region-title-row"><h2 id="region-title"></h2><span id="region-count" class="region-count"></span></div></div></div>
+      <div class="dialog-top-actions">
+        <button type="button" class="save-button" id="save-current-area" aria-pressed="false" aria-label="현재 동네 저장"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-heart"></use></svg></button>
+        <button type="button" class="close-button" id="close-region" aria-label="동네 상세 닫기"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"></use></svg></button>
+      </div>
+    </div>
+    <div id="region-access" class="region-access"></div>
+    <nav id="activity-tabs" class="activity-tabs" aria-label="이 지역에서 즐길 거리"></nav>
+    <div class="activity-viewport" id="activity-viewport">
+      <article id="activity-content" class="activity-content" aria-labelledby="activity-title"></article>
+    </div>
+    <div class="carousel-footer">
+      <button type="button" class="nav-button" id="previous-activity"><span aria-hidden="true">←</span><span>이전 즐길 거리</span></button>
+      <div class="carousel-progress"><span class="progress-kind">즐길 거리</span><span id="page-label" aria-live="polite"></span></div>
+      <button type="button" class="nav-button next" id="next-activity"><span>다음 즐길 거리</span><span aria-hidden="true">→</span></button>
+    </div>
+  </dialog>
+
+  <dialog id="photo-dialog" class="photo-dialog" aria-labelledby="lightbox-title">
+    <div class="lightbox-top"><div><p class="eyebrow">PHOTO GALLERY</p><h2 id="lightbox-title"></h2></div><button type="button" class="close-button" id="close-photo" aria-label="큰 사진 닫기"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"></use></svg></button></div>
+    <div class="lightbox-stage" data-photo-swipe>
+      <img id="lightbox-image" alt="" draggable="false">
+      <button type="button" class="photo-arrow previous" data-photo-step="-1" aria-label="이전 사진">‹</button>
+      <button type="button" class="photo-arrow next" data-photo-step="1" aria-label="다음 사진">›</button>
+    </div>
+    <div class="lightbox-footer"><span id="lightbox-counter" aria-live="polite"></span><p id="lightbox-caption"></p></div>
+  </dialog>
+
+  <dialog id="about-dialog" class="about-dialog" aria-labelledby="about-title">
+    <div class="about-top"><span class="eyebrow">BEFORE YOU GO</span><button type="button" class="close-button" id="close-about" aria-label="안내 닫기"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"></use></svg></button></div>
+    <h2 id="about-title">가까운 동네에서, 취향대로.</h2>
+    <p id="about-summary">2박 3일 여행에서 고르기 편하도록 도쿄 시내 지역을 모았습니다. 각 지역의 즐길 거리와 여러 사진을 골라 볼 수 있습니다.</p>
+    <div class="about-notes">
+      <section><h3>이번 지도의 범위</h3><p>도쿄메트로·도에이 지하철역과 도보로 접근하는 시내 지역입니다. 디즈니, 지브리 미술관, 해리포터 스튜디오, 다카오산, 오쿠타마와 오다이바 등은 제외했습니다.</p></section>
+      <section><h3>시간과 방문 안내</h3><p>표시한 체류시간은 여행 계획을 위한 예상입니다. 왕복 교통과 대기시간은 별도이며, 역 출구와 걷는 속도에 따라 도보시간이 달라집니다. 방문일의 운영 여부와 예약 조건은 각 페이지의 공식 안내에서 확인하세요.</p></section>
+      <section><h3>사진과 즐길 거리 넘기기</h3><p>사진 위의 화살표와 좌우 밀기는 사진만 바꿉니다. 다른 즐길 거리는 화면 하단의 고정 버튼이나 상단 목록에서 선택하세요. 사진 크게 보기를 누르면 원래 비율로 볼 수 있습니다.</p></section>
+      <section><h3>지도 읽는 법</h3><p>축소하면 도쿄의 20개 지역을 짧은 지명으로 모두 보여주고, 확대하면 개별 장소 핀을 보여줍니다. 지도에는 지명만 간단하게 표시합니다. 전체 지역명과 즐길 거리 개수는 지역을 선택하거나 하단 목록을 펼쳐 확인하세요. 지명이나 영역을 누르면 그 동네로 확대됩니다. 장소 핀을 누르면 해당 즐길 거리의 사진과 설명이 아래에 나오고, 하단 바를 올리면 같은 정보가 펼쳐집니다. 같은 건물·단지의 여러 즐길 거리는 한 핀에 묶어 개수를 표시하며, 눌러 각각 고를 수 있습니다. 초록 기차 표시는 지하철역입니다. 지도를 움직이거나 확대·축소해도 선택한 정보는 유지됩니다.</p></section>
+      <section><h3>표시한 지점의 범위</h3><p>칠해진 영역은 장소들의 위치를 기준으로 만든 대략적인 여행 구역입니다. 행정구역의 공식 경계가 아닙니다. 관광지와 건물은 도쿄메트로·도에이 지하철역에서 걸어갈 수 있는 주요 장소를 골랐습니다. 공원·시장·복합시설의 점은 대표 위치이며 출입구와 다를 수 있습니다. 나리타 공항은 도쿄와의 위치를 파악하기 위한 별도 표시입니다. 공항까지는 지하철만으로 이동하는 범위에 포함되지 않습니다.</p></section>
+    </div>
+    <section class="about-notes"><h3>관심 동네 저장</h3><p>하트를 누른 동네는 현재 브라우저에 보관됩니다. 다른 기기와 자동으로 공유되지 않으며, 브라우저 데이터를 지우면 저장 목록도 사라집니다.</p></section>
+    <details id="source-details"><summary>지역별 정보·사진 출처 보기</summary><div id="source-list"></div></details>
+    <details id="map-source-details"><summary>지도와 표시 지점의 출처 보기</summary><p>지도 데이터: <a href="https://openfreemap.org/" target="_blank" rel="noopener noreferrer">OpenFreeMap</a> · <a href="https://www.openmaptiles.org/" target="_blank" rel="noopener noreferrer">OpenMapTiles</a> · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors (ODbL 1.0)</a>. 간략한 일본 윤곽: <a href="https://www.naturalearthdata.com/about/terms-of-use/" target="_blank" rel="noopener noreferrer">Natural Earth (public domain)</a>. <a href="assets/poi-candidates.json" target="_blank" rel="noopener noreferrer">표시 지점의 좌표·접근 근거 데이터</a> · <a href="assets/activity-places.json" target="_blank" rel="noopener noreferrer">즐길 거리와 장소 연결</a> · <a href="assets/travel-zones.geojson" target="_blank" rel="noopener noreferrer">대략적인 여행 구역</a></p><div id="map-poi-sources"></div></details>
+    <p class="verification-date">정보 확인: 2026.10.18 · 배경 지도는 인터넷 연결이 필요합니다.</p>
+  </dialog>
+
+  <div id="toast" class="toast" hidden role="status" aria-live="polite" aria-atomic="true"></div>
+  <noscript>동네를 선택하고 사진을 넘겨보려면 브라우저의 JavaScript를 켜 주세요.</noscript>
+</body>
+</html>

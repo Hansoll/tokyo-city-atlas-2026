@@ -1,0 +1,973 @@
+{
+  "places": [
+    {
+      "id": "shibuya_crossing",
+      "name": "시부야 스크램블 교차로",
+      "areaId": "shibuya",
+      "activityIds": [
+        "shibuya_crossing"
+      ],
+      "lat": 35.6594951,
+      "lon": 139.7004982,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/78/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/1335178864",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "shibuya_sky",
+      "name": "시부야 스크램블 스퀘어·SKY",
+      "areaId": "shibuya",
+      "activityIds": [
+        "shibuya_sky"
+      ],
+      "lat": 35.6583792,
+      "lon": 139.7022161,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/1749/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/617560918",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "shibuya_parco",
+      "name": "시부야 PARCO",
+      "areaId": "shibuya",
+      "activityIds": [
+        "shibuya_parco"
+      ],
+      "lat": 35.6619271,
+      "lon": 139.6987487,
+      "sourceUrl": "https://shibuya.parco.jp/info/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/451564412",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "shibuya_miyashita",
+      "name": "미야시타파크",
+      "areaId": "shibuya",
+      "activityIds": [
+        "shibuya_miyashita"
+      ],
+      "lat": 35.6619267,
+      "lon": 139.7018023,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/1844/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/116806278",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "harajuku_omotesando_meiji",
+      "name": "메이지신궁",
+      "areaId": "harajuku_omotesando",
+      "activityIds": [
+        "harajuku_omotesando_meiji"
+      ],
+      "lat": 35.6748417,
+      "lon": 139.6996266,
+      "sourceUrl": "https://www.meijijingu.or.jp/en/access/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/469908925",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "harajuku_omotesando_takeshita",
+      "name": "다케시타 거리",
+      "areaId": "harajuku_omotesando",
+      "activityIds": [
+        "harajuku_omotesando_takeshita"
+      ],
+      "lat": 35.6711612,
+      "lon": 139.7049553,
+      "sourceUrl": "https://www.gotokyo.org/en/destinations/western-tokyo/harajuku/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/26604007",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "harajuku_omotesando_hills",
+      "name": "오모테산도 힐즈",
+      "areaId": "harajuku_omotesando",
+      "activityIds": [
+        "harajuku_omotesando_hills"
+      ],
+      "lat": 35.6672123,
+      "lon": 139.7089044,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/36/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/139070534",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "harajuku_omotesando_nezu_museum",
+      "name": "네즈미술관",
+      "areaId": "harajuku_omotesando",
+      "activityIds": [
+        "harajuku_omotesando_nezu_museum"
+      ],
+      "lat": 35.6622429,
+      "lon": 139.7172555,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/1/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/139972313",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "harajuku_omotesando_yoyogi_park",
+      "name": "요요기공원",
+      "areaId": "harajuku_omotesando",
+      "activityIds": [
+        "harajuku_omotesando_yoyogi_park"
+      ],
+      "lat": 35.6714052,
+      "lon": 139.6951716,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/21/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/relation/19862716",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "shinjuku_gyoen",
+      "name": "신주쿠교엔",
+      "areaId": "shinjuku",
+      "activityIds": [
+        "shinjuku_gyoen"
+      ],
+      "lat": 35.6850716,
+      "lon": 139.7095466,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/75/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/15772074",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "shinjuku_tocho",
+      "name": "도쿄도청",
+      "areaId": "shinjuku",
+      "activityIds": [
+        "shinjuku_tocho"
+      ],
+      "lat": 35.6897391,
+      "lon": 139.6929973,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/74/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/relation/11045959",
+      "coordinateNote": "도쿄도청 전체 부지의 대표 지점입니다. 제1본청사 전망실 입구를 뜻하지 않습니다."
+    },
+    {
+      "id": "shinjuku_yokocho",
+      "name": "오모이데요코초",
+      "areaId": "shinjuku",
+      "activityIds": [
+        "shinjuku_yokocho"
+      ],
+      "lat": 35.6928662,
+      "lon": 139.6995502,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/63/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/103063334",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "shinjuku_kabukicho",
+      "name": "가부키초·도큐 가부키초 타워",
+      "areaId": "shinjuku",
+      "activityIds": [
+        "shinjuku_kabukicho"
+      ],
+      "lat": 35.6959352,
+      "lon": 139.7006566,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/1855/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/852000385",
+      "coordinateNote": "가부키초 밤거리 산책의 대표 지점으로 실제 도큐 가부키초 타워 건물 좌표를 사용합니다. 골든가이 등 주변 골목은 별도 위치이며 산책 범위 전체의 중심점은 아닙니다."
+    },
+    {
+      "id": "ikebukuro_animate",
+      "name": "애니메이트 이케부쿠로 본점",
+      "areaId": "ikebukuro",
+      "activityIds": [
+        "ikebukuro_animate"
+      ],
+      "lat": 35.7311468,
+      "lon": 139.7154494,
+      "sourceUrl": "https://www.animate.co.jp/shop/ikebukuro/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/3166174415",
+      "coordinateNote": "OSM에 등록된 장소의 점 좌표입니다."
+    },
+    {
+      "id": "ikebukuro_sunshine_city",
+      "name": "선샤인시티",
+      "areaId": "ikebukuro",
+      "activityIds": [
+        "ikebukuro_aquarium",
+        "ikebukuro_tenbou",
+        "ikebukuro_manten"
+      ],
+      "lat": 35.7288478,
+      "lon": 139.7195458,
+      "sourceUrl": "https://sunshinecity.jp/en/information/access_train.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/250938764",
+      "coordinateNote": "선샤인시티 복합단지의 OSM 대표 지점입니다. 수족관·만텐은 월드임포트마트 빌딩 옥상, 텐보파크는 별도 선샤인60 빌딩 60층에 있습니다. 단지 내 각 시설의 입구까지는 추가 이동합니다.",
+      "additionalSourceUrls": [
+        "https://planetarium.konicaminolta.jp/manten/access/",
+        "https://www.gotokyo.org/en/spot/447/index.html",
+        "https://sunshinecity.jp/en/aquarium/access/"
+      ]
+    },
+    {
+      "id": "ebisu_daikanyama_nakameguro_museum",
+      "name": "도쿄도 사진미술관",
+      "areaId": "ebisu_daikanyama_nakameguro",
+      "activityIds": [
+        "ebisu_daikanyama_nakameguro_museum"
+      ],
+      "lat": 35.641543,
+      "lon": 139.7133962,
+      "sourceUrl": "https://topmuseum.jp/access/?lang=en",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/250668627",
+      "coordinateNote": "공식 안내의 시설명·주소와 일치하는 실제 OSM 장소 지점입니다. 입구나 매표소의 정확한 위치를 뜻하지는 않습니다."
+    },
+    {
+      "id": "ebisu_daikanyama_nakameguro_river",
+      "name": "나카메구로 강변·벳쇼바시",
+      "areaId": "ebisu_daikanyama_nakameguro",
+      "activityIds": [
+        "ebisu_daikanyama_nakameguro_river"
+      ],
+      "lat": 35.6454316,
+      "lon": 139.699257,
+      "sourceUrl": "https://tokyo-meguro.net/megurogawanosakuranamiki/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/1105144387",
+      "coordinateNote": "긴 메구로강 전체의 중심이 아니라 나카메구로역 북쪽 벳쇼바시의 확인된 좌표입니다."
+    },
+    {
+      "id": "ebisu_daikanyama_nakameguro_roastery",
+      "name": "스타벅스 리저브 로스터리 도쿄",
+      "areaId": "ebisu_daikanyama_nakameguro",
+      "activityIds": [
+        "ebisu_daikanyama_nakameguro_roastery"
+      ],
+      "lat": 35.6492619,
+      "lon": 139.6926277,
+      "sourceUrl": "https://www.starbucks.co.jp/reserve/roastery/entry-guide/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/621235316",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "ebisu_daikanyama_nakameguro_garden_place",
+      "name": "에비스 가든플레이스",
+      "areaId": "ebisu_daikanyama_nakameguro",
+      "activityIds": [
+        "ebisu_daikanyama_nakameguro_garden_place"
+      ],
+      "lat": 35.6420419,
+      "lon": 139.7135595,
+      "sourceUrl": "https://gardenplace.jp/access/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/93182025",
+      "coordinateNote": "에비스 가든플레이스로 등록된 상업 건물 경계의 대표 지점입니다. 광장·미술관 입구는 단지 안에서 추가 이동합니다."
+    },
+    {
+      "id": "nakano_broadway",
+      "name": "나카노 브로드웨이",
+      "areaId": "nakano",
+      "activityIds": [
+        "nakano_broadway"
+      ],
+      "lat": 35.7092407,
+      "lon": 139.6656853,
+      "sourceUrl": "https://www.gotokyo.org/en/destinations/western-tokyo/nakano/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/743181007",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "nakano_sunmall",
+      "name": "나카노 선몰 상점가",
+      "areaId": "nakano",
+      "activityIds": [
+        "nakano_sunmall"
+      ],
+      "lat": 35.7074862,
+      "lon": 139.665676,
+      "sourceUrl": "https://www.nakano-kanko.com/tourism/nakano_sunmall/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/51979641",
+      "coordinateNote": "나카노역 북쪽의 실제 선몰 아케이드 보행로를 대표하는 OSM 지점입니다. 상점가 전체나 특정 가게 입구를 뜻하지 않습니다."
+    },
+    {
+      "id": "nakano_centralpark",
+      "name": "나카노 센트럴파크",
+      "areaId": "nakano",
+      "activityIds": [
+        "nakano_centralpark"
+      ],
+      "lat": 35.7073527,
+      "lon": 139.6617004,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/104/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/1088134635",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "ueno_ameyoko",
+      "name": "아메요코",
+      "areaId": "ueno",
+      "activityIds": [
+        "ueno_ameyoko"
+      ],
+      "lat": 35.7100241,
+      "lon": 139.7745414,
+      "sourceUrl": "https://www.ameyoko.net/access/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/4496960001",
+      "coordinateNote": "OSM에 등록된 장소의 점 좌표입니다."
+    },
+    {
+      "id": "ueno_museum",
+      "name": "도쿄국립박물관",
+      "areaId": "ueno",
+      "activityIds": [
+        "ueno_museum"
+      ],
+      "lat": 35.7190448,
+      "lon": 139.7759676,
+      "sourceUrl": "https://www.tnm.jp/modules/r_free_page/index.php?id=113&lang=en",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/33439660",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "ueno_park",
+      "name": "우에노공원·시노바즈 연못",
+      "areaId": "ueno",
+      "activityIds": [
+        "ueno_park"
+      ],
+      "lat": 35.711875,
+      "lon": 139.7708647,
+      "sourceUrl": "https://www.kensetsu.metro.tokyo.lg.jp/jimusho/toubuk/ueno/kouenannai",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/relation/5413285",
+      "coordinateNote": "우에노공원 산책 중 시노바즈 연못의 실제 OSM 경계 대표점을 사용합니다. 공원 전체의 중심이나 공원 입구를 뜻하지 않습니다."
+    },
+    {
+      "id": "ueno_zoo",
+      "name": "우에노동물원",
+      "areaId": "ueno",
+      "activityIds": [
+        "ueno_zoo"
+      ],
+      "lat": 35.7153426,
+      "lon": 139.768896,
+      "sourceUrl": "https://www.tokyo-zoo.net/ueno/visitor-info/access/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/1065775336",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "yanaka_market",
+      "name": "야나카긴자",
+      "areaId": "yanaka_nezu_sendagi",
+      "activityIds": [
+        "yanaka_market"
+      ],
+      "lat": 35.7276689,
+      "lon": 139.7653174,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/170/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/737745076",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "yanaka_nezu",
+      "name": "네즈신사",
+      "areaId": "yanaka_nezu_sendagi",
+      "activityIds": [
+        "yanaka_nezu"
+      ],
+      "lat": 35.7199731,
+      "lon": 139.7606625,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/70/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/464629204",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "yanaka_asakura",
+      "name": "아사쿠라 조소관",
+      "areaId": "yanaka_nezu_sendagi",
+      "activityIds": [
+        "yanaka_asakura"
+      ],
+      "lat": 35.7268258,
+      "lon": 139.7685379,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/508/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/209190478",
+      "coordinateNote": "공식 안내의 시설명·주소와 일치하는 OSM 건물·부지 경계의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "aki_maid",
+      "name": "메이드리밍 아키하바라 본점",
+      "areaId": "akihabara",
+      "activityIds": [
+        "aki_maid"
+      ],
+      "lat": 35.7019821,
+      "lon": 139.7713366,
+      "sourceUrl": "https://maidreamin.com/shop/detail.html?id=1",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/4428508790",
+      "coordinateNote": "OSM에 등록된 장소의 점 좌표입니다."
+    },
+    {
+      "id": "aki_figure",
+      "name": "아키하바라 라디오회관",
+      "areaId": "akihabara",
+      "activityIds": [
+        "aki_figure"
+      ],
+      "lat": 35.697882,
+      "lon": 139.7719499,
+      "sourceUrl": "https://akihabara-radiokaikan.co.jp/shop-list/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/47127856",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "aki_electronics",
+      "name": "오노덴",
+      "areaId": "akihabara",
+      "activityIds": [
+        "aki_electronics"
+      ],
+      "lat": 35.698291,
+      "lon": 139.7710137,
+      "sourceUrl": "https://www.onoden.co.jp/view/company",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/1915175462",
+      "coordinateNote": "공식 안내의 시설명·주소와 일치하는 실제 OSM 장소 지점입니다. 입구나 매표소의 정확한 위치를 뜻하지는 않습니다."
+    },
+    {
+      "id": "aki_animate",
+      "name": "애니메이트 아키하바라",
+      "areaId": "akihabara",
+      "activityIds": [
+        "aki_animate"
+      ],
+      "lat": 35.7004293,
+      "lon": 139.7717153,
+      "sourceUrl": "https://www.animate.co.jp/shop/akihabara/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/13390443973",
+      "coordinateNote": "OSM에 등록된 장소의 점 좌표입니다."
+    },
+    {
+      "id": "aki_gacha",
+      "name": "아키하바라 가챠회관",
+      "areaId": "akihabara",
+      "activityIds": [
+        "aki_gacha"
+      ],
+      "lat": 35.7018564,
+      "lon": 139.7712502,
+      "sourceUrl": "https://www.akibagacha.com/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/4274726996",
+      "coordinateNote": "공식 안내의 시설명·주소와 일치하는 실제 OSM 장소 지점입니다. 입구나 매표소의 정확한 위치를 뜻하지는 않습니다."
+    },
+    {
+      "id": "asakusa_temple",
+      "name": "센소지",
+      "areaId": "asakusa",
+      "activityIds": [
+        "asakusa_temple"
+      ],
+      "lat": 35.7134032,
+      "lon": 139.7955265,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/15/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/173154847",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "asakusa_nakamise",
+      "name": "나카미세 상점가",
+      "areaId": "asakusa",
+      "activityIds": [
+        "asakusa_nakamise"
+      ],
+      "lat": 35.7125206,
+      "lon": 139.7965171,
+      "sourceUrl": "https://www.gotokyo.org/en/destinations/eastern-tokyo/asakusa/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/573269291",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "asakusa_river",
+      "name": "스미다공원·다이토구",
+      "areaId": "asakusa",
+      "activityIds": [
+        "asakusa_river"
+      ],
+      "lat": 35.7155065,
+      "lon": 139.8031428,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/506/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/relation/14235095",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "asakusa_cruise",
+      "name": "도쿄크루즈 아사쿠사 선착장",
+      "areaId": "asakusa",
+      "activityIds": [
+        "asakusa_cruise"
+      ],
+      "lat": 35.7107622,
+      "lon": 139.7984897,
+      "sourceUrl": "https://www.suijobus.co.jp/en/cruise/asakusa/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/380194349",
+      "coordinateNote": "운영사 TOKYO CRUISE 웹사이트가 태그된 실제 선착장 건물의 OSM 대표 지점입니다. 북쪽의 아사쿠사 니텐몬 선착장과 다른 곳입니다. 승선 게이트는 현장에서 확인합니다."
+    },
+    {
+      "id": "skytree_town",
+      "name": "도쿄 스카이트리타운",
+      "areaId": "skytree_oshiage",
+      "activityIds": [
+        "skytree_view",
+        "skytree_aquarium",
+        "skytree_solamachi",
+        "skytree_planetarium"
+      ],
+      "lat": 35.7100543,
+      "lon": 139.8107141,
+      "sourceUrl": "https://www.gotokyo.org/en/destinations/eastern-tokyo/skytree-and-around/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/288269147",
+      "coordinateNote": "스카이트리 타워의 실제 좌표를 복합단지 대표점으로 사용합니다. 전망대는 타워, 스미다 수족관은 소라마치 웨스트야드 5·6층, 덴쿠는 이스트야드 7층의 별도 시설입니다. 개별 입구의 위치를 뜻하지 않습니다.",
+      "additionalSourceUrls": [
+        "https://www.sumida-aquarium.com/about/access/",
+        "https://www.tokyo-solamachi.jp/floor/5f/?floor_map_no=1",
+        "https://planetarium.konicaminolta.jp/tenku/access/",
+        "https://www.tokyo-solamachi.jp/floor/7f/?floor_map_no=9"
+      ]
+    },
+    {
+      "id": "ryogoku_edo",
+      "name": "에도도쿄박물관",
+      "areaId": "ryogoku",
+      "activityIds": [
+        "ryogoku_edo"
+      ],
+      "lat": 35.6964453,
+      "lon": 139.7960776,
+      "sourceUrl": "https://edo-tokyo-museum.or.jp/en/information/access/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/76187056",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "ryogoku_hokusai",
+      "name": "스미다 호쿠사이 미술관",
+      "areaId": "ryogoku",
+      "activityIds": [
+        "ryogoku_hokusai"
+      ],
+      "lat": 35.6963779,
+      "lon": 139.8004717,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/138/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/444853841",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "ryogoku_noren",
+      "name": "에도노렌·옛 료고쿠역사",
+      "areaId": "ryogoku",
+      "activityIds": [
+        "ryogoku_noren"
+      ],
+      "lat": 35.6961854,
+      "lon": 139.7924286,
+      "sourceUrl": "https://www.jrtk.jp/edonoren/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/4879948321",
+      "coordinateNote": "구 료고쿠역사 내부의 OSM 「江戸NOREN souvenirs」 지점을 음식점가 대표점으로 사용합니다. 운영사 공식 안내의 JR 료고쿠역 서쪽 출구 직결 건물과 대조했습니다. 개별 음식점·출입구 위치가 아니며, 도에이 료고쿠역은 동쪽의 별도 역입니다."
+    },
+    {
+      "id": "ryogoku_ekoin",
+      "name": "에코인",
+      "areaId": "ryogoku",
+      "activityIds": [
+        "ryogoku_ekoin"
+      ],
+      "lat": 35.6933386,
+      "lon": 139.7920396,
+      "sourceUrl": "https://ekoin.or.jp/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/1927476976",
+      "coordinateNote": "공식 안내의 시설명·주소와 일치하는 실제 OSM 장소 지점입니다. 입구나 매표소의 정확한 위치를 뜻하지는 않습니다."
+    },
+    {
+      "id": "kiyosumi_garden",
+      "name": "기요스미 정원",
+      "areaId": "kiyosumi_monzen",
+      "activityIds": [
+        "kiyosumi_garden"
+      ],
+      "lat": 35.679981,
+      "lon": 139.7977865,
+      "sourceUrl": "https://www.tokyo-park.or.jp/park/kiyosumi/faq/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/22562412",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "kiyosumi_coffee",
+      "name": "블루보틀 기요스미시라카와",
+      "areaId": "kiyosumi_monzen",
+      "activityIds": [
+        "kiyosumi_coffee"
+      ],
+      "lat": 35.6777653,
+      "lon": 139.8005811,
+      "sourceUrl": "https://store.bluebottlecoffee.jp/pages/kiyosumi",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/606993803",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "kiyosumi_tomioka",
+      "name": "도미오카하치만구",
+      "areaId": "kiyosumi_monzen",
+      "activityIds": [
+        "kiyosumi_tomioka"
+      ],
+      "lat": 35.671616,
+      "lon": 139.7997538,
+      "sourceUrl": "https://www.gotokyo.org/en/destinations/eastern-tokyo/fukagawa/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/616241895",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "kiyosumi_mot",
+      "name": "도쿄현대미술관",
+      "areaId": "kiyosumi_monzen",
+      "activityIds": [
+        "kiyosumi_mot"
+      ],
+      "lat": 35.6797754,
+      "lon": 139.8087878,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/141/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/relation/12077221",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "tokyo_marunouchi_station",
+      "name": "도쿄역 마루노우치 광장",
+      "areaId": "tokyo_marunouchi",
+      "activityIds": [
+        "tokyo_marunouchi_station"
+      ],
+      "lat": 35.6814451,
+      "lon": 139.765222,
+      "sourceUrl": "https://www.gotokyo.org/en/destinations/central-tokyo/tokyo-station-and-marunouchi/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/23840805",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "tokyo_marunouchi_kitte",
+      "name": "KITTE 마루노우치",
+      "areaId": "tokyo_marunouchi",
+      "activityIds": [
+        "tokyo_marunouchi_kitte"
+      ],
+      "lat": 35.679647,
+      "lon": 139.7648033,
+      "sourceUrl": "https://marunouchi.jp-kitte.jp/gb/access.jsp",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/145394391",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "tokyo_marunouchi_forum",
+      "name": "도쿄국제포럼",
+      "areaId": "tokyo_marunouchi",
+      "activityIds": [
+        "tokyo_marunouchi_forum"
+      ],
+      "lat": 35.6767901,
+      "lon": 139.7635414,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/440/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/144508545",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "tokyo_marunouchi_character_street",
+      "name": "도쿄 캐릭터 스트리트",
+      "areaId": "tokyo_marunouchi",
+      "activityIds": [
+        "tokyo_marunouchi_character_street"
+      ],
+      "lat": 35.6823859,
+      "lon": 139.7687416,
+      "sourceUrl": "https://www.tokyoeki-1bangai.co.jp/tokyocharacterstreet/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/1358679892",
+      "coordinateNote": "도쿄역 야에스 지하 북쪽의 실제 캐릭터 스트리트 보행 통로에 있는 OSM 대표 지점입니다. 지상 출입구가 아니며 JR 개찰구 밖 지하 1층입니다."
+    },
+    {
+      "id": "tokyo_marunouchi_imperial_east",
+      "name": "황거 동원·오테몬",
+      "areaId": "tokyo_marunouchi",
+      "activityIds": [
+        "tokyo_marunouchi_imperial_east"
+      ],
+      "lat": 35.685735,
+      "lon": 139.7613147,
+      "sourceUrl": "https://www.kunaicho.go.jp/visit/higashigyoen/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/1588249145",
+      "coordinateNote": "OSM에 등록된 장소의 점 좌표입니다."
+    },
+    {
+      "id": "tokyo_marunouchi_ramen_street",
+      "name": "도쿄 라멘 스트리트",
+      "areaId": "tokyo_marunouchi",
+      "activityIds": [
+        "tokyo_marunouchi_ramen_street"
+      ],
+      "lat": 35.6803754,
+      "lon": 139.7678774,
+      "sourceUrl": "https://www.tokyoeki-1bangai.co.jp/street/ramen/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/4646514992",
+      "coordinateNote": "도쿄역 야에스 지하 남쪽의 실제 라멘 스트리트 음식점가를 표시한 OSM 지점입니다. 지상 출입구가 아니며 JR 개찰구 밖 지하 1층입니다."
+    },
+    {
+      "id": "nihonbashi_mitsukoshi",
+      "name": "니혼바시 미쓰코시 본점",
+      "areaId": "nihonbashi",
+      "activityIds": [
+        "nihonbashi_mitsukoshi"
+      ],
+      "lat": 35.6856339,
+      "lon": 139.7734359,
+      "sourceUrl": "https://cp.mistore.jp/global/en/nihombashi.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/relation/7872611",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "nihonbashi_fukutoku",
+      "name": "후쿠토쿠신사",
+      "areaId": "nihonbashi",
+      "activityIds": [
+        "nihonbashi_fukutoku"
+      ],
+      "lat": 35.6872213,
+      "lon": 139.7744198,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/642/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/3399170095",
+      "coordinateNote": "OSM에 등록된 장소의 점 좌표입니다."
+    },
+    {
+      "id": "nihonbashi_mitsui",
+      "name": "미쓰이기념미술관",
+      "areaId": "nihonbashi",
+      "activityIds": [
+        "nihonbashi_mitsui"
+      ],
+      "lat": 35.6868356,
+      "lon": 139.7730738,
+      "sourceUrl": "https://www.mitsui-museum.jp/guide/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/1420765471",
+      "coordinateNote": "공식 안내의 시설명·주소와 일치하는 실제 OSM 장소 지점입니다. 입구나 매표소의 정확한 위치를 뜻하지는 않습니다."
+    },
+    {
+      "id": "nihonbashi_coredo",
+      "name": "COREDO 무로마치 1",
+      "areaId": "nihonbashi",
+      "activityIds": [
+        "nihonbashi_coredo"
+      ],
+      "lat": 35.6866811,
+      "lon": 139.7742077,
+      "sourceUrl": "https://mitsui-shopping-park.com/urban/muromachi/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/181930209",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "ginza_tsukiji_ginza",
+      "name": "긴자 와코·4초메 교차로",
+      "areaId": "ginza_tsukiji",
+      "activityIds": [
+        "ginza_tsukiji_ginza"
+      ],
+      "lat": 35.6717352,
+      "lon": 139.765007,
+      "sourceUrl": "https://www.gotokyo.org/en/destinations/central-tokyo/ginza/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/103509469",
+      "coordinateNote": "교차로에 접한 와코 본관의 확인된 좌표입니다."
+    },
+    {
+      "id": "ginza_tsukiji_tsukiji",
+      "name": "츠키지 장외시장",
+      "areaId": "ginza_tsukiji",
+      "activityIds": [
+        "ginza_tsukiji_tsukiji"
+      ],
+      "lat": 35.6653884,
+      "lon": 139.7704732,
+      "sourceUrl": "https://www.tsukiji.or.jp/enjoy/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/606978548",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "ginza_tsukiji_kabuki",
+      "name": "가부키좌",
+      "areaId": "ginza_tsukiji",
+      "activityIds": [
+        "ginza_tsukiji_kabuki"
+      ],
+      "lat": 35.6696572,
+      "lon": 139.7681111,
+      "sourceUrl": "https://www.shochiku.co.jp/global/en/kabuki/watchkabuki/gototheatre/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/relation/4859313",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "ginza_tsukiji_ginza_six",
+      "name": "GINZA SIX",
+      "areaId": "ginza_tsukiji",
+      "activityIds": [
+        "ginza_tsukiji_ginza_six"
+      ],
+      "lat": 35.6695326,
+      "lon": 139.764049,
+      "sourceUrl": "https://ginza6.tokyo/access-en/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/488225309",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "ginza_tsukiji_hongwanji",
+      "name": "츠키지 혼간지",
+      "areaId": "ginza_tsukiji",
+      "activityIds": [
+        "ginza_tsukiji_hongwanji"
+      ],
+      "lat": 35.6665999,
+      "lon": 139.7721277,
+      "sourceUrl": "https://tsukijihongwanji.jp/global/guide/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/540410517",
+      "coordinateNote": "공식 안내의 시설명·주소와 일치하는 OSM 건물·부지 경계의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "dome_laqua",
+      "name": "라쿠아",
+      "areaId": "dome",
+      "activityIds": [
+        "dome_laqua"
+      ],
+      "lat": 35.7065985,
+      "lon": 139.7533625,
+      "sourceUrl": "https://www.laqua.jp/spa/information/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/170598710",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "dome_garden",
+      "name": "고이시카와 고라쿠엔",
+      "areaId": "dome",
+      "activityIds": [
+        "dome_garden"
+      ],
+      "lat": 35.7053631,
+      "lon": 139.7491508,
+      "sourceUrl": "https://www.tokyo-park.or.jp/park/koishikawakorakuen/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/20028327",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "dome_rides",
+      "name": "도쿄돔 시티",
+      "areaId": "dome",
+      "activityIds": [
+        "dome_rides"
+      ],
+      "lat": 35.7055706,
+      "lon": 139.7519705,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/9/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/20028328",
+      "coordinateNote": "도쿄돔 건물의 실제 좌표를 도쿄돔 시티 단지 대표점으로 사용합니다. 놀이기구는 단지 안 여러 곳에 있어 각 탑승구와 위치가 다릅니다."
+    },
+    {
+      "id": "roppongi_mori_tower",
+      "name": "롯폰기 힐즈 모리타워",
+      "areaId": "roppongi",
+      "activityIds": [
+        "roppongi_mori",
+        "roppongi_cityview"
+      ],
+      "lat": 35.6604561,
+      "lon": 139.7292768,
+      "sourceUrl": "https://www.mori.art.museum/en/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/153924771",
+      "coordinateNote": "모리타워 건물의 OSM 대표 지점입니다. 모리미술관과 도쿄 시티뷰는 같은 타워의 서로 다른 층에 있어 한 장소로 묶었습니다. 입구·매표소 좌표는 아닙니다.",
+      "additionalSourceUrls": [
+        "https://art-view.roppongihills.com/ko/"
+      ]
+    },
+    {
+      "id": "roppongi_nact",
+      "name": "국립신미술관",
+      "areaId": "roppongi",
+      "activityIds": [
+        "roppongi_nact"
+      ],
+      "lat": 35.6653369,
+      "lon": 139.7264411,
+      "sourceUrl": "https://www.nact.jp/en/info.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/103425086",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "azabudai_borderless",
+      "name": "아자부다이 힐즈·보더리스",
+      "areaId": "azabudai",
+      "activityIds": [
+        "azabudai_borderless"
+      ],
+      "lat": 35.6620024,
+      "lon": 139.7434178,
+      "sourceUrl": "https://www.teamlab.art/e/tokyo/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/11512273700",
+      "coordinateNote": "OSM에 등록된 장소의 점 좌표입니다."
+    },
+    {
+      "id": "azabudai_tower",
+      "name": "도쿄타워",
+      "areaId": "azabudai",
+      "activityIds": [
+        "azabudai_tower"
+      ],
+      "lat": 35.6584491,
+      "lon": 139.745536,
+      "sourceUrl": "https://www.tokyotower.co.jp/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/relation/4247312",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "azabudai_zojoji",
+      "name": "조조지",
+      "areaId": "azabudai",
+      "activityIds": [
+        "azabudai_zojoji"
+      ],
+      "lat": 35.6572781,
+      "lon": 139.7483432,
+      "sourceUrl": "https://www.gotokyo.org/en/spot/47/index.html",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/744348814",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "toyosu_planets",
+      "name": "팀랩 플래닛",
+      "areaId": "toyosu",
+      "activityIds": [
+        "toyosu_planets"
+      ],
+      "lat": 35.6491075,
+      "lon": 139.7898285,
+      "sourceUrl": "https://support.dmm.com/teamlabplanets/article/47829",
+      "coordinateSourceUrl": "https://teamlabplanets.dmm.com/ko/guide",
+      "coordinateNote": "시설 공식 페이지의 Google Maps 장소 링크에 명시된 !3d/!4d 핀 좌표입니다."
+    },
+    {
+      "id": "toyosu_lalaport",
+      "name": "라라포트 도요스",
+      "areaId": "toyosu",
+      "activityIds": [
+        "toyosu_lalaport"
+      ],
+      "lat": 35.6554955,
+      "lon": 139.7931266,
+      "sourceUrl": "https://mitsui-shopping-park.com/lalaport/toyosu/en/",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/22823727",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    },
+    {
+      "id": "toyosu_park",
+      "name": "도요스공원",
+      "areaId": "toyosu",
+      "activityIds": [
+        "toyosu_park"
+      ],
+      "lat": 35.6534089,
+      "lon": 139.7930772,
+      "sourceUrl": "https://www.koto-kanko.jp/tourism/detail_spot.php?sid=S00204",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/way/22823726",
+      "coordinateNote": "OSM 장소 경계 또는 거리의 대표 지점입니다. 출입구·매표소 좌표는 아닙니다."
+    }
+  ]
+}
